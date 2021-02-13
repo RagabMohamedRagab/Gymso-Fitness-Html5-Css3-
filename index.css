@@ -1,0 +1,514 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 3000px;
+
+}
+
+header {
+    height: 100vh;
+    background-image: url('image/hero-bg.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 0;
+
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-left: 10%;
+
+}
+
+/* start overlay*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+
+/* Start gym Header*/
+.Gym {
+    width: 85%;
+    background-color: #000;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+
+.Gym_Logo {
+    width: 25%;
+}
+
+.Gym_Logo h2 {
+    text-transform: capitalize;
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+.Gym_Logo:hover h2 {
+    color: #DE3725;
+}
+
+.Gym_Move {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-align: right;
+}
+
+.Gym_Move li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.Gym_Move li:hover a {
+    color: #DE3725;
+    transition: color 0.1s ease-in-out;
+}
+
+.Gym_Move li a.active {
+    color: #DE3725;
+}
+
+.Gym_Website {
+    width: 12%;
+}
+
+.Gym_Website a i {
+    margin-left: 15%;
+}
+
+.Gym_Website a:hover {
+    color: hsl(6, 74%, 51%);
+    cursor: pointer;
+}
+
+.Gym_Article {
+    width: 33%;
+    -webkit-transform: translate(90%, 130%);
+    transform: translate(90%, 130%);
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.Gym_Article p {
+    color: #8A8F95;
+    font-size: larger;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.Gym_Article h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Gym_Article button:first-of-type {
+    border: none;
+    background-color: transparent;
+    margin: 10px 50px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.Gym_Article button:first-of-type:hover {
+    color: #CB310D
+}
+
+.Gym_Article button:last-of-type {
+    padding: 16px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #CB310D;
+    border: 1px solid #EA3B1C;
+    font-weight: bold;
+}
+
+.Gym_Article button:last-of-type:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.Gym_Article button {
+    display: inline;
+}
+
+/*End Header*/
+/*start First Of Type Article*/
+article:first-of-type {
+    background-color: #17181A;
+    height: 15%;
+    padding-top: 25px;
+}
+
+.W3_article {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.W3_article .left-side {
+    flex-basis: 48%;
+    margin-right: 0%;
+    border-right: 2px solid#353634;
+}
+
+.W3_article .left-side h1 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.W3_article .left-side h4 {
+    color: #fff;
+    margin-bottom: 32px;
+
+}
+
+.W3_article .left-side p {
+    color: #575954;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    line-height: 1.6rem;
+}
+
+.W3_article .left-side button {
+    width: 64%;
+    background-color: #F13A12;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+.W3_article .left-side button:hover {
+    background-color: #fff;
+    color: #F13A12;
+}
+
+.W3_article .right-side {
+    flex-basis: 50%;
+    margin: 20px 0px 0% 6%;
+}
+
+.W3_article .right-side h1 {
+    color: #fff;
+}
+
+.W3_article .right-side p {
+    color: #fff;
+    margin: 30px 0px 30px 0px;
+    font-weight: bolder;
+}
+
+.W3_article .right-side p span {
+    color: #575954;
+}
+
+/*End First Of Type Article*/
+/* start description person*/
+article:nth-of-type(2) {
+    height: 17%;
+    background-color: #f9f9f9;
+}
+
+.Gymso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Gymso .Gym_aricle {
+    flex-basis: 35%;
+    margin-top: 10px;
+}
+
+.Gymso .Gym_aricle h1 {
+    margin-top: 30%
+}
+
+.Gymso .Gym_aricle p {
+    color: #697B84;
+    line-height: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+
+.Gymso .Gym_aricle p span {
+    color: #a3a1a1;
+}
+
+.Gymso .Gym_person {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 65px 70px 0px 0px
+}
+
+.Yoga_Instructor {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 4px 3px #697B84;
+}
+
+.Yoga_Instructor div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 8px 10px;
+}
+
+.Yoga_Instructor div:first-of-type div:first-child p {
+    line-height: 1.5rem;
+}
+
+.Yoga_Instructor div:first-of-type div:first-child p span:first-child {
+    font-weight: bolder;
+}
+
+.Yoga_Instructor div:first-of-type div:first-child p span:last-child {
+    color: #697B84;
+}
+
+.Yoga_Instructor div:last-of-type a i {
+    color: #5F5F5F;
+    margin-bottom: 17px;
+}
+
+/* End description person*/
+/*start Training Classes*/
+article:nth-of-type(3) {
+    margin-top: 6%;
+}
+
+.Training .Training_head {
+    text-align: center;
+}
+
+.Training .Training_head p {
+    text-transform: capitalize;
+    font-size: larger;
+    font-weight: bold;
+    color: #8B8A88;
+}
+
+.Img {
+    border-radius: 10px;
+    width: 342px;
+    opacity: 0.8;
+}
+
+.Img:hover {
+    opacity: 1;
+}
+
+.Training .Training_head h2 {
+    margin: 8px 0px 45px 0px;
+    font-weight: bolder;
+}
+
+.Training_Classes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 60px;
+}
+
+.Training_Classes>div {
+    width: 30%;
+    border: 2px solid #F13A12;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.Training_Classes>div div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.7rem;
+}
+
+.Training_Classes>div div+p {
+    width: 80%;
+    margin-left: 20px;
+    line-height: 1.5rem;
+    color: #6C716A;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: #f13a12;
+    
+}
+
+.Training_Classes div div:first-of-type div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.Training_Classes div div:first-of-type div:first-child h3 {
+    margin: 3px 0px 5px -64px;
+    font-weight: 900;
+}
+
+.Training_Classes div div:first-of-type div:first-child p {
+    margin-left: 20px;
+
+}
+
+.Training_Classes div div:first-of-type div:first-child p span {
+    color: #9A9695;
+}
+
+.Training_Classes div div:first-of-type div:last-child span {
+    margin-right: 10px;
+    background-color: #f13a12;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 900;
+}
+
+/*End Training Classes*/
+/*Start Weekly*/
+article:nth-of-type(4){
+    background-color: #17181A;
+    margin-top: 50px;
+    height: 22%;
+    text-align: center;
+  
+}
+.Table_text{ 
+    padding-top: 25px;
+}
+.Table_text p{
+    text-transform: capitalize;
+    color:#919390;
+    font-size: 1.2rem;
+}
+.Table_text h1{
+    color:#fff;
+    text-transform:capitalize;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.Table_Time table{
+    width:95%;
+    height: 370px;
+    margin-top: 50px;
+}
+.Table_Time table,th{
+    border:2px solid #1F2022;
+    border-collapse: collapse;
+    padding: 16px;
+    color:#fff;
+}
+.Table_Time table tr:first-of-type {
+ background-color:#F13A12;
+}
+/* End Weekly*/
+/*start Submit*/
+article:nth-of-type(5)
+{
+    margin-top: 50px;
+}
+.Contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Contact_Form{
+    flex-basis: 50%;
+}
+.Contact_Form table{
+    width: 100%;
+}
+.Contact_Form table caption{
+    font-weight: bold;
+    font-size: x-large;
+    text-transform: capitalize;
+    margin-right: 100px;
+}
+.Contact_Form table input{
+    padding: 16px;
+    
+}
+.Contact_Form table input,.Contact_Form table textarea{
+    width: 90%;
+    margin: 15px 0px 10px 0px;
+    text-indent: .9rem;
+
+}
+.Contact_Form table input[type='submit']{
+    background-color: #17181A;
+    padding: 12px;
+    border:none;
+    outline: none;
+    color:#fff
+}
+.Contact_Form table input[type='submit']:hover{
+    background-color: #F13A12;
+}
+.Contact_Location{
+    flex-basis: 50%;
+    margin-bottom: 80px;
+}
+.Contact_Location p{
+    margin: 35px 0px 35px 0px;
+}
+.Contact_Location hr{
+    width: 95%;
+    margin: 30px 0px 0px 0px;
+}
+.Contact_Location img{
+    width: 95%;
+    margin-top: 10%;
+}
+/*End Submit*/
+/* start Footer*/
+footer{
+    background-color:#17181A;
+    height: 2%;
+}
+.bottom_Page{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 22px;
+    color:#fff;
+}
+.bottom_Page div:last-child span {
+    margin-left: 10px;
+}
+.bottom_Page div:last-child span i{
+    color:#F13A12
+}
+/* End Footer*/
